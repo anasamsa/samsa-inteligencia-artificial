@@ -721,6 +721,17 @@ a.yt:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .lang:first-of-type{margin-left:10px}
 .lang.on{background:#fff;color:var(--ink);border-color:#fff}
 a.lang:hover{border-color:#fff;color:#fff}
+/* sub-bloque dentro de un capítulo */
+.sub{margin:clamp(40px,5vw,64px) auto clamp(18px,2vw,24px)}
+.sub .tk{color:var(--green-br)}
+.sub h3{font-size:clamp(24px,3vw,36px);font-weight:800;color:#fff;margin-top:6px}
+.sub p{font-size:clamp(15px,1.3vw,17px);color:#9DB0CC;line-height:1.55;max-width:60ch;margin-top:8px}
+.nrow--fruti{grid-template-columns:103fr 75fr 75fr 75fr}
+@media (max-width:980px){.nrow--fruti{grid-template-columns:1fr 1fr}.nrow--fruti>:first-child{grid-column:span 2}}
+.tile.blk{background:#000}
+.tile.blk video{object-fit:contain}
+.nrow--5{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:980px){.nrow--5{grid-template-columns:1fr 1fr}.nrow--5>:first-child{grid-column:span 2}}
 
 </style>
 </head>
@@ -780,8 +791,6 @@ a.lang:hover{border-color:#fff;color:#fff}
     <div class="tile note r2"><span class="tk">Brand characters</span><p>Original characters that stay consistent in every asset.</p><p>We design the world, the personality, the model sheet, the expressions and the poses. Then we train the AI on the character to use it in videos, images and graphic assets. The character belongs to the brand.</p></div>
     <figure class="tile c3 r2"><video data-src="../img/v/diabetes-spot.mp4" poster="../img/v/diabetes-spot.jpg" muted loop playsinline preload="none"></video><button class="snd" type="button">Sound on</button><figcaption><b>Character in live action</b>An animated character sharing the scene with actors in a commercial.</figcaption></figure>
     <button class="tile zoom r2" data-src="../img/ppt-stout.jpg"><img src="../img/ppt-stout.jpg" alt="Model sheet of the character Stout: a stone guardian in several poses." loading="lazy"><figcaption><b>Model sheet</b>Stout, in several poses.</figcaption></button>
-    <figure class="tile c2"><video data-src="../img/v/personaje-mujer.mp4" poster="../img/v/personaje-mujer.jpg" muted loop playsinline preload="none"></video><figcaption><b>Animated character</b>For explainer videos.</figcaption></figure>
-    <figure class="tile r2"><video data-src="../img/v/personaje-guerrera.mp4" poster="../img/v/personaje-guerrera.jpg" muted loop playsinline preload="none"></video></figure>
     <figure class="tile c2"><video data-src="../img/v/personajes-abrazo.mp4" poster="../img/v/personajes-abrazo.jpg" muted loop playsinline preload="none"></video></figure>
     <button class="tile zoom" data-src="../img/ppt-pers-2.jpg"><img src="../img/ppt-pers-2.jpg" alt="A small blue character on clouds." loading="lazy"></button>
     <button class="tile zoom c2" data-src="../img/ppt-pers-3.jpg"><img src="../img/ppt-pers-3.jpg" alt="Two kids in a small plane flying through a storm." loading="lazy"></button>
@@ -792,10 +801,35 @@ a.lang:hover{border-color:#fff;color:#fff}
     <button class="tile zoom r2" data-src="../img/ppt-live-1.jpg"><img src="../img/ppt-live-1.jpg" alt="A basketball player dunking through green smoke." loading="lazy"><figcaption><b>Realistic characters</b>For sports and music campaigns.</figcaption></button>
     <button class="tile zoom r2" data-src="../img/ppt-live-2.jpg"><img src="../img/ppt-live-2.jpg" alt="A young man in a green hoodie and headphones under concert lights." loading="lazy"></button>
   </div></div>
+  <div class="wide sub"><span class="tk">Amores Inesperados</span><h3>A fruit telenovela</h3><p>Fruit characters with soap-opera direction: extreme close-ups and large-scale wide shots. Each character has its own set of expressions.</p></div>
+  <div class="full-w"><div class="nrow nrow--fruti">
+    <button class="tile zoom" style="aspect-ratio:611/592" data-src="../img/fruti-key.jpg"><img src="../img/fruti-key.jpg" alt="Lima and Limón, two fruit characters in blue uniforms, at a brewery." loading="lazy"><figcaption><b>Key visual</b>Lima and Limón at the brewery.</figcaption></button>
+    <figure class="tile" style="aspect-ratio:828/1108"><video data-src="../img/v/fruti-lima.mp4" poster="../img/v/fruti-lima.jpg" muted loop playsinline preload="none"></video><figcaption><b>Lima</b>Expressions.</figcaption></figure>
+    <figure class="tile" style="aspect-ratio:828/1108"><video data-src="../img/v/fruti-limon.mp4" poster="../img/v/fruti-limon.jpg" muted loop playsinline preload="none"></video><figcaption><b>Limón</b>Expressions.</figcaption></figure>
+    <figure class="tile" style="aspect-ratio:828/1108"><video data-src="../img/v/fruti-stout.mp4" poster="../img/v/fruti-stout.jpg" muted loop playsinline preload="none"></video><figcaption><b>Stout</b>Expressions.</figcaption></figure>
+  </div></div>
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">04</span><div><h2 class="ch__t">Digital <span class="grad">avatars</span></h2><p class="ch__d">Avatars of real people, with AI-generated voice, for presentations, explainer videos and campaigns.</p></div></div>
+  <div class="wide ch__head"><span class="ch__n">04</span><div><h2 class="ch__t">AI for <span class="grad">gaming</span></h2><p class="ch__d">Characters, animations and UI for Lucky Bastards Studio online games.</p></div></div>
+  <div class="full-w"><div class="bento">
+    <figure class="tile c4 r2"><video data-src="../img/g/rimbreaker.mp4" poster="../img/g/rimbreaker.jpg" muted loop playsinline preload="none"></video><figcaption><b>Rim Breaker</b>Gameplay.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/kash-victory.mp4" poster="../img/g/kash-victory.jpg" muted loop playsinline preload="none"></video><figcaption><b>Sudden Death</b>Kash: win.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/kash-fail.mp4" poster="../img/g/kash-fail.jpg" muted loop playsinline preload="none"></video><figcaption><b>Sudden Death</b>Kash: fail.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/voss-victory.mp4" poster="../img/g/voss-victory.jpg" muted loop playsinline preload="none"></video><figcaption><b>Sudden Death</b>Voss: win.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/voss-dribble.mp4" poster="../img/g/voss-dribble.jpg" muted loop playsinline preload="none"></video><figcaption><b>Sudden Death</b>Voss: dribble.</figcaption></figure>
+    <figure class="tile c2 blk"><video data-src="../img/g/card-otto.mp4" poster="../img/g/card-otto.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Character card: Otto.</figcaption></figure>
+    <figure class="tile c2 blk"><video data-src="../img/g/card-ash.mp4" poster="../img/g/card-ash.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Character card: Ash.</figcaption></figure>
+    <figure class="tile c2 blk"><video data-src="../img/g/megawin.mp4" poster="../img/g/megawin.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Win animation.</figcaption></figure>
+    <figure class="tile c2 blk"><video data-src="../img/g/epicwin.mp4" poster="../img/g/epicwin.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Win animation.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/scatter-otto.mp4" poster="../img/g/scatter-otto.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Animated scatter.</figcaption></figure>
+    <figure class="tile  blk"><video data-src="../img/g/icono-power.mp4" poster="../img/g/icono-power.jpg" muted loop playsinline preload="none"></video><figcaption><b>Sudden Death</b>Animated icon.</figcaption></figure>
+    <figure class="tile c2 blk"><video data-src="../img/g/otto-victory.mp4" poster="../img/g/otto-victory.jpg" muted loop playsinline preload="none"></video><figcaption><b>Dead Heat</b>Otto: win.</figcaption></figure>
+  </div></div>
+</section>
+
+<section class="ch">
+  <div class="wide ch__head"><span class="ch__n">05</span><div><h2 class="ch__t">Digital <span class="grad">avatars</span></h2><p class="ch__d">Avatars of real people, with AI-generated voice, for presentations, explainer videos and campaigns.</p></div></div>
   <div class="full-w"><div class="bento">
     <figure class="tile r3"><video data-src="../img/v/mariana.mp4" poster="../img/v/mariana.jpg" muted loop playsinline preload="none"></video><button class="snd" type="button">Sound on</button><figcaption><b>Mariana García</b>Digital avatar with product.</figcaption></figure>
     <figure class="tile c3 r2"><video data-src="../img/v/mauricio.mp4" poster="../img/v/mauricio.jpg" muted loop playsinline preload="none"></video><button class="snd" type="button">Sound on</button><figcaption><b>Louisville Ladder</b>Presenter for product videos.</figcaption></figure>
@@ -803,10 +837,18 @@ a.lang:hover{border-color:#fff;color:#fff}
     <button class="tile zoom" data-src="../img/ppt-avatar-2.jpg"><img src="../img/ppt-avatar-2.jpg" alt="Avatar of Mariana García on the beach with a product." loading="lazy"></button>
     <button class="tile zoom" data-src="../img/ppt-avatar-3.jpg"><img src="../img/ppt-avatar-3.jpg" alt="Avatar of Mariana García holding a product." loading="lazy"></button>
   </div></div>
+  <div class="wide sub"><span class="tk">El 10 de Samsa</span><h3>Manuela</h3><p>A character for a Samsa social media piece, with her set of expressions.</p></div>
+  <div class="full-w"><div class="nrow nrow--5">
+    <figure class="tile" style="aspect-ratio:4/5"><video data-src="../img/g/el10-video.mp4" poster="../img/g/el10-video.jpg" muted loop playsinline preload="none"></video><figcaption><b>El 10 de Samsa</b>Social media video.</figcaption></figure>
+    <button class="tile zoom" style="aspect-ratio:800/993" data-src="../img/g/manuela-01_alegre.jpg"><img src="../img/g/manuela-01_alegre.jpg" alt="Manuela, happy." loading="lazy"><figcaption><b>Manuela</b>Happy.</figcaption></button>
+    <button class="tile zoom" style="aspect-ratio:800/993" data-src="../img/g/manuela-02_enojada.jpg"><img src="../img/g/manuela-02_enojada.jpg" alt="Manuela, angry." loading="lazy"><figcaption><b>Manuela</b>Angry.</figcaption></button>
+    <button class="tile zoom" style="aspect-ratio:800/993" data-src="../img/g/manuela-03_triste.jpg"><img src="../img/g/manuela-03_triste.jpg" alt="Manuela, sad." loading="lazy"><figcaption><b>Manuela</b>Sad.</figcaption></button>
+    <button class="tile zoom" style="aspect-ratio:800/993" data-src="../img/g/manuela-04_angulo_sonadora.jpg"><img src="../img/g/manuela-04_angulo_sonadora.jpg" alt="Manuela, dreamy." loading="lazy"><figcaption><b>Manuela</b>Dreamy.</figcaption></button>
+  </div></div>
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">05</span><div><h2 class="ch__t">Product images <span class="grad">and portraits</span></h2><p class="ch__d">From a real photo, true to the product and to the person. Slide across the image to compare.</p></div></div>
+  <div class="wide ch__head"><span class="ch__n">06</span><div><h2 class="ch__t">Product images <span class="grad">and portraits</span></h2><p class="ch__d">From a real photo, true to the product and to the person. Slide across the image to compare.</p></div></div>
   <div class="full-w"><div class="trio">
     <figure class="trio__it"><div class="cmp" id="cmp1"><img src="../img/ppt-llavero-real.jpg" alt="Real photo of a keychain on a wooden table."><img class="top" src="../img/ppt-llavero-ia.jpg" alt="AI-generated image of the same keychain on a studio background."><span class="bar"></span><span class="lb l">Generated image</span><span class="lb r">Real photo</span><input type="range" min="0" max="100" value="50" aria-label="Compare the real photo and the generated image of the keychain"></div><figcaption><b>Product</b>From a phone photo to a studio shot.</figcaption></figure>
     <figure class="trio__it"><div class="cmp" id="cmp2"><img src="../img/ppt-retrato-real.jpg" alt="Real photo of a woman facing the camera against a white wall."><img class="top" src="../img/ppt-retrato-ia.jpg" alt="AI-generated portrait of the same woman in an office with beauty products."><span class="bar"></span><span class="lb l">Generated image</span><span class="lb r">Real photo</span><input type="range" min="0" max="100" value="50" aria-label="Compare the real photo and the generated portrait"></div><figcaption><b>Portrait</b>The same person, in a new setting.</figcaption></figure>
@@ -815,7 +857,7 @@ a.lang:hover{border-color:#fff;color:#fff}
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">06</span><div><h2 class="ch__t">Selected projects <span class="grad">for Natura</span></h2><p class="ch__d">Magazine for beauty consultants and videos for social media.</p></div></div>
+  <div class="wide ch__head"><span class="ch__n">07</span><div><h2 class="ch__t">Selected projects <span class="grad">for Natura</span></h2><p class="ch__d">Magazine for beauty consultants and videos for social media.</p></div></div>
   <div class="full-w"><div class="nrow">
     <button class="tile zoom" style="aspect-ratio:795/1185" data-src="../img/natura-mi-consultoria-c11.jpg"><img src="../img/natura-mi-consultoria-c11.jpg" alt="Cover of Mi Consultoría, cycle 11, 2026: a consultant in a black blazer holds an Avon magazine." loading="lazy"><figcaption><b>Mi Consultoría · cycle 11</b>Cover of the magazine for consultants.</figcaption></button>
     <figure class="tile" style="aspect-ratio:700/960"><video data-src="../img/v/natura-revista-motion.mp4" poster="../img/v/natura-revista-motion.jpg" muted loop playsinline preload="none"></video><figcaption><b>Natura magazine</b>Photo in motion.</figcaption></figure>
@@ -825,7 +867,7 @@ a.lang:hover{border-color:#fff;color:#fff}
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">07</span><div><h2 class="ch__t">Short-form <span class="grad">and explainer videos</span></h2><p class="ch__d">Short clips for social media and videos that explain a product or a service.</p></div></div>
+  <div class="wide ch__head"><span class="ch__n">08</span><div><h2 class="ch__t">Short-form <span class="grad">and explainer videos</span></h2><p class="ch__d">Short clips for social media and videos that explain a product or a service.</p></div></div>
   <div class="full-w"><div class="bento">
     <figure class="tile r2"><video data-src="../img/ejemplo-ionava-wallet.mp4" poster="../img/ejemplo-ionava-wallet.jpg" muted loop playsinline preload="none"></video><figcaption><b>ionava</b>15-second clip.</figcaption></figure>
     <figure class="tile r2"><video data-src="../img/ref-louisville.mp4" poster="../img/ref-louisville.jpg" muted loop playsinline preload="none"></video><figcaption><b>Louisville Ladder</b>Hero video.</figcaption></figure>
@@ -835,14 +877,14 @@ a.lang:hover{border-color:#fff;color:#fff}
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">08</span><div><h2 class="ch__t">Content systems <span class="grad">and automation</span></h2><p class="ch__d">In-house tools that generate and adapt assets with the brand's layouts, and automated workflows to produce faster.</p></div></div>
+  <div class="wide ch__head"><span class="ch__n">09</span><div><h2 class="ch__t">Content systems <span class="grad">and automation</span></h2><p class="ch__d">In-house tools that generate and adapt assets with the brand's layouts, and automated workflows to produce faster.</p></div></div>
   <div class="full-w"><div class="bento">
     <figure class="tile c4 r2"><video data-src="../img/v/demo-plataforma.mp4" poster="../img/v/demo-plataforma.jpg" muted loop playsinline preload="none"></video><figcaption><b>Samsa platform</b>Asset generation with brand layouts.</figcaption></figure>
   </div></div>
 </section>
 
 <section class="ch">
-  <div class="wide ch__head"><span class="ch__n">09</span><div><h2 class="ch__t">Also</h2></div></div>
+  <div class="wide ch__head"><span class="ch__n">10</span><div><h2 class="ch__t">Also</h2></div></div>
   <div class="full-w"><div class="mini">
     <div><b>AI jingles and audio</b><p>Jingles, music and voice-overs for campaigns, videos and social media.</p></div>
     <div><b>AI search visibility</b><p>Brand presence in ChatGPT, Gemini or Perplexity: key prompts, monitoring and reports.</p></div>
@@ -854,7 +896,7 @@ a.lang:hover{border-color:#fff;color:#fff}
 <div class="light">
 <section class="block">
   <div class="wide">
-    <p class="seclabel">10 · Training</p>
+    <p class="seclabel">11 · Training</p>
     <h2 class="bigt">AI training and consulting <span class="grad">for companies</span></h2>
     <div class="body-lg"><p>For communications, marketing and sales teams that already use AI or want to start. We work with the tools the company already has in place.</p></div>
     <div class="traits t3">
